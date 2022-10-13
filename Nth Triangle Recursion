@@ -1,0 +1,13 @@
+import java.util.*;
+public class Main {
+	public static int nt(int num){
+		if(num==1 || num==0)
+		return num;
+		return num+nt(num-1);
+	}
+    public static void main(String args[]) {
+		Scanner sc=new Scanner(System.in);
+		int rk=sc.nextInt();
+		System.out.println(nt(rk));
+    }
+}
